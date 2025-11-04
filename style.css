@@ -1,0 +1,108 @@
+/* === Loader Text Animation === */
+.tedx span,
+.BMU span {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.6s forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Loader Progress Bar Animation (initial state only) === */
+@keyframes loadProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* === Main Content Hidden Initially === */
+#main-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+/* === Reveal Main Content After Load === */
+body.loaded #main-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* === Loader Fade-out Animation === */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  transition: opacity 0.6s ease, visibility 0.6s ease, transform 0.6s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.995);
+}
+
+/* === Progress Bar Styling === */
+.progress-bar {
+  width: 16rem;
+  height: 0.25rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  margin: 1rem auto;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: #dc2626;
+  transition: width 0.3s ease;
+}
+
+/* === Loader Text === */
+#loading-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* === Mobile Menu Utilities (Tailwind handles transitions) === */
+#mobile-menu {
+  /* initial state handled via translate-x-full in HTML */
+  transition: transform 0.4s ease;
+}
+
+/* === Section Padding to Avoid Overlap Under Navbar === */
+section {
+  padding-top: 3rem;
+}
+@media (min-width: 1024px) {
+  section {
+    padding-top: 4rem;
+  }
+}
+
+/* === Aesthetic Wrapper for Large Screens === */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}

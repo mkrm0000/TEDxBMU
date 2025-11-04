@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TEDxBMU 2025 | Innovation Through Diversity</title>
+    <link rel="icon" href="images/icon.svg" type="image/svg+xml" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-black text-white antialiased">
+    <!-- Loader -->
+    <div id="loader" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-opacity duration-700">
+      <div class="logo mb-6 text-center">
+        <div class="tedx text-4xl font-extrabold flex justify-center gap-1">
+          <span>T</span><span>E</span><span>D</span><span class="text-red-600">x</span>
+        </div>
+        <div class="BMU text-2xl font-bold flex justify-center gap-1 mt-1">
+          <span>B</span><span>M</span><span>U</span>
+        </div>
+      </div>
+
+      <p class="tagline text-gray-300 italic mb-3">Ideas worth spreading</p>
+
+      <div class="flex gap-2 mb-4">
+        <div class="w-3 h-3 bg-red-600 rounded-full animate-pulse"></div>
+        <div class="w-3 h-3 bg-red-600 rounded-full animate-pulse delay-150"></div>
+        <div class="w-3 h-3 bg-red-600 rounded-full animate-pulse delay-300"></div>
+      </div>
+
+      <div class="progress-bar w-64 h-1 bg-gray-800 rounded-full overflow-hidden mb-3">
+        <div class="progress h-full w-0 bg-red-600"></div>
+      </div>
+
+      <p class="loading-text text-gray-400 text-sm">Preparing your experience...</p>
+    </div>
+
+    <!-- Main content -->
+    <main id="main-content" class="opacity-0 transition-opacity duration-700">
+      <!-- Navbar -->
+      <nav class="fixed top-0 left-0 right-0 z-40 bg-black/75 backdrop-blur-md border-b border-white/5 h-16 flex items-center">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+          <a href="#home" class="flex items-center gap-3">
+            <span class="bg-red-600 rounded px-2 py-1 text-sm font-bold">TEDx</span>
+            <span class="font-semibold text-base">BMU</span>
+          </a>
+
+          <!-- desktop links -->
+          <ul class="hidden lg:flex items-center gap-6 text-gray-200">
+            <li><a href="#home" class="hover:text-white/90">Home</a></li>
+            <li><a href="#about" class="hover:text-white/90">About</a></li>
+            <li><a href="#speakers" class="hover:text-white/90">Speakers</a></li>
+            <li><a href="#highlights" class="hover:text-white/90">Highlights</a></li>
+            <li><a href="#partners" class="hover:text-white/90">Partners</a></li>
+            <li><a href="#venue" class="text-white scale-105">Venue</a></li>
+          </ul>
+
+          <!-- hamburger -->
+          <button id="menu-btn" class="lg:hidden p-2 rounded-md" aria-label="Open menu">
+            <span class="block w-6 h-0.5 bg-white mb-1"></span>
+            <span class="block w-6 h-0.5 bg-white mb-1"></span>
+            <span class="block w-6 h-0.5 bg-white"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- mobile overlay & menu -->
+      <div id="mobile-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-30 hidden lg:hidden"></div>
+
+      <aside id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-black/95 z-40 transform translate-x-full transition-transform duration-400 lg:hidden">
+        <div class="p-6 border-b border-white/10 flex justify-between items-center">
+          <div class="text-white font-bold">Menu</div>
+          <button id="close-menu" class="text-white p-2 rounded-full hover:bg-white/10">&times;</button>
+        </div>
+        <nav class="flex flex-col py-6">
+          <a href="#home" class="block py-3 px-6 text-lg text-white/90 hover:text-white">Home</a>
+          <a href="#about" class="block py-3 px-6 text-lg text-white/90 hover:text-white">About</a>
+          <a href="#speakers" class="block py-3 px-6 text-lg text-white/90 hover:text-white">Speakers</a>
+          <a href="#highlights" class="block py-3 px-6 text-lg text-white/90 hover:text-white">Highlights</a>
+          <a href="#partners" class="block py-3 px-6 text-lg text-white/90 hover:text-white">Partners</a>
+          <a href="#venue" class="block py-3 px-6 text-lg text-red-400">Venue</a>
+        </nav>
+      </aside>
+
+      <!-- HERO / Home -->
+      <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background: linear-gradient(#000,#111);">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+          <h1 class="text-red-600 text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 tracking-tight">TEDx<span class="text-white">BMU</span> 2025</h1>
+          <p class="text-white/80 text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Ideas worth spreading at Bangladesh Maritime University</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+            <a href="#about" class="border border-white/30 py-3 px-6 rounded-lg hover:bg-white/5 transition">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT (use your expanded About already provided) -->
+      <section id="about" class="py-20 bg-black relative overflow-hidden">
+        <div class="container mx-auto px-4 max-w-6xl">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">About TEDxBMU</h2>
+            <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+            <p class="text-white/80 max-w-3xl mx-auto">A day of engaging talks, innovative ideas, and meaningful connections at Chittagong University of Engineering &amp; Technology. TEDxBMU brings together thinkers, creators and doers to explore how diversity sparks innovation.</p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-12">
+            <div class="">
+              <div class="rounded-xl overflow-hidden border border-white/10 shadow-2xl">
+                <img src="images/about.jpg" alt="TEDx Event" class="w-full object-cover block" loading="lazy">
+              </div>
+            </div>
+
+            <div>
+              <div class="p-8 rounded-xl border border-white/10 backdrop-blur-sm bg-black/40">
+                <h3 class="text-2xl font-bold text-white mb-6">What is TEDx?</h3>
+                <p class="text-white/80 mb-4 leading-relaxed">TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection.</p>
+                <p class="text-white/80 mb-4 leading-relaxed">TEDxBMU is independently organized under a license from TED, bringing the spirit of TED's mission of “ideas worth spreading” to Chittagong University of Engineering &amp; Technology.</p>
+                <p class="text-white/80 leading-relaxed">Our event features a combination of live speakers and TED Talk videos to spark deep conversation and connections. The TED Conference provides general guidance, but TEDxBMU is self-organized.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-6 rounded-xl border border-white/10 bg-gray-900/30">
+              <svg class="w-10 h-10 text-red-600 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path></svg>
+              <h4 class="text-white font-bold mb-2">Innovative Ideas</h4>
+              <p class="text-white/70">Discover groundbreaking concepts and perspectives that challenge conventional thinking.</p>
+            </div>
+
+            <div class="p-6 rounded-xl border border-white/10 bg-gray-900/30">
+              <svg class="w-10 h-10 text-red-600 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+              <h4 class="text-white font-bold mb-2">Inspiring Speakers</h4>
+              <p class="text-white/70">Engage with exceptional thinkers and doers from diverse fields and backgrounds.</p>
+            </div>
+
+            <div class="p-6 rounded-xl border border-white/10 bg-gray-900/30">
+              <svg class="w-10 h-10 text-red-600 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02"/></svg>
+              <h4 class="text-white font-bold mb-2">Networking Opportunities</h4>
+              <p class="text-white/70">Connect with like-minded individuals and forge valuable professional relationships.</p>
+            </div>
+
+            <div class="p-6 rounded-xl border border-white/10 bg-gray-900/30">
+              <svg class="w-10 h-10 text-red-600 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              <h4 class="text-white font-bold mb-2">Interactive Experience</h4>
+              <p class="text-white/70">Engage in discussions, Q&amp;A sessions, and experiential learning activities.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPEAKERS (kept similar to your original) -->
+      <section id="speakers" class="py-20 bg-zinc-900">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Featured Speakers</h2>
+            <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+            <p class="text-white/80 max-w-3xl mx-auto">Meet our distinguished speakers who will share their groundbreaking ideas and inspiring stories at TEDxBMU.</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Repeat speaker cards (placeholder) -->
+            <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700">
+              <div class="w-full aspect-[4/5] bg-gray-800"></div>
+              <div class="p-6">
+                <h3 class="text-white font-bold">Prof. Dr. Saleh Hasan Naqib</h3>
+                <p class="text-gray-300 text-sm mt-2">Vice-Chancellor of the University of Rajshahi, renowned physicist.</p>
+              </div>
+            </div>
+
+            <!-- add more speaker cards as needed -->
+            <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700">
+              <div class="w-full aspect-[4/5] bg-gray-800"></div>
+              <div class="p-6">
+                <h3 class="text-white font-bold">Dr. Muhammad Imadur Rahman</h3>
+                <p class="text-gray-300 text-sm mt-2">CEO, Bangladesh Satellite Company Limited.</p>
+              </div>
+            </div>
+
+            <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700">
+              <div class="w-full aspect-[4/5] bg-gray-800"></div>
+              <div class="p-6">
+                <h3 class="text-white font-bold">Zubuyer Kaolin</h3>
+                <p class="text-gray-300 text-sm mt-2">Astrophotographer & filmmaker.</p>
+              </div>
+            </div>
+
+            <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700">
+              <div class="w-full aspect-[4/5] bg-gray-800"></div>
+              <div class="p-6">
+                <h3 class="text-white font-bold">Muhammad Sajal</h3>
+                <p class="text-gray-300 text-sm mt-2">Bestselling author & nutritionist.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HIGHLIGHTS -->
+      <section id="highlights" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Event Highlights</h2>
+            <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+            <p class="text-white/80 max-w-3xl mx-auto">Experience the energy and inspiration of TEDxBMU through our highlight video.</p>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="aspect-video rounded-xl overflow-hidden border border-gray-800">
+              <iframe src="https://drive.google.com/file/d/1CtA_P2Cn55hM8rESYgJdp3n-uFSJjyT6/preview" frameborder="0" allowfullscreen class="w-full h-full"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARTNERS (kept similar) -->
+      <section id="partners" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Trusted Partners</h2>
+            <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+            <p class="text-white/80 max-w-3xl mx-auto">We're grateful to these amazing organizations for making TEDxBMU possible.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="#" class="bg-gray-800 border border-white/10 rounded-lg p-6 flex items-center justify-center h-40">
+              <img src="images/partner1.png" alt="Partner 1" class="max-h-16 object-contain" />
+            </a>
+            <a href="#" class="bg-gray-800 border border-white/10 rounded-lg p-6 flex items-center justify-center h-40">
+              <img src="images/partner2.png" alt="Partner 2" class="max-h-16 object-contain" />
+            </a>
+            <a href="#" class="bg-gray-800 border border-white/10 rounded-lg p-6 flex items-center justify-center h-40">
+              <img src="images/partner3.png" alt="Partner 3" class="max-h-16 object-contain" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- VENUE (added to match your original) -->
+      <section id="venue" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Event Venue</h2>
+            <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+            <p class="text-white/80 max-w-3xl mx-auto">Join us at our carefully selected venue for an immersive TEDx experience.</p>
+          </div>
+
+          <div class="flex flex-col lg:flex-row gap-8 items-start">
+            <div class="lg:w-1/2">
+              <div class="rounded-md overflow-hidden border border-white/10">
+                <img src="images/bus.png" alt="Bus Route to BMU Campus" class="w-full object-contain block" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="lg:w-1/2">
+              <div class="bg-zinc-800 p-8 rounded-xl border border-zinc-700 shadow-lg">
+                <h3 class="text-2xl font-bold text-white mb-6">BMU Main Auditorium</h3>
+                <div class="space-y-6">
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 rounded-full bg-red-600/10 flex items-center justify-center mr-4">
+                      <!-- map pin -->
+                      <svg class="w-5 h-5 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                      <h4 class="font-medium text-white mb-1">Location</h4>
+                      <p class="text-white/70">Chittagong University of Engineering &amp; Technology,<br />Chittagong-4349, Bangladesh</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 rounded-full bg-red-600/10 flex items-center justify-center mr-4">
+                      <!-- calendar -->
+                      <svg class="w-5 h-5 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                    </div>
+                    <div>
+                      <h4 class="font-medium text-white mb-1">Date &amp; Time</h4>
+                      <p class="text-white/70">June 28, 2025<br />9:00 AM - 5:00 PM</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 rounded-full bg-red-600/10 flex items-center justify-center mr-4">
+                      <!-- phone -->
+                      <svg class="w-5 h-5 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.1.89.4 1.72.7 2.5a2 2 0 0 1-.45 2.11L8.09 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.82.3 1.63.6 2.5.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div>
+                      <h4 class="font-medium text-white mb-1">Contact</h4>
+                      <p class="text-white/70">+8801323465453<br />tedxBMU2025@gmail.com</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER (matching your original structure) -->
+      <footer class="bg-zinc-900 text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 pt-16 pb-8">
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+            <div class="md:col-span-2">
+              <a href="#home" class="flex items-center gap-2 text-white font-bold text-xl mb-6">
+                <span class="bg-red-600 px-2 py-1 rounded">TEDx</span><span>BMU</span>
+              </a>
+              <p class="text-white/70 mb-8 max-w-md">TEDxBMU brings together the brightest minds to share ideas worth spreading. Join us for a day of inspiration, innovation, and meaningful connections.</p>
+
+              <div class="flex space-x-4 mb-8">
+                <!-- social icons -->
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 border border-zinc-700 hover:bg-red-600 transition">
+                  <!-- facebook -->
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 border border-zinc-700 hover:bg-red-600 transition">
+                  <!-- twitter -->
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2"/></svg>
+                </a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 border border-zinc-700 hover:bg-red-600 transition">
+                  <!-- instagram -->
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="5"/></svg>
+                </a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 border border-zinc-700 hover:bg-red-600 transition">
+                  <!-- linkedin -->
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2H10v9H6v-9"/></svg>
+                </a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 border border-zinc-700 hover:bg-red-600 transition">
+                  <!-- youtube -->
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2.5 17a24.12 24.12 0 0 1 0-10"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-8">
+              <div>
+                <h3 class="font-semibold text-white mb-5">Event Info</h3>
+                <ul class="space-y-3 text-white/70">
+                  <li><a href="#about" class="hover:text-white">About TEDx</a></li>
+                  <li><a href="#speakers" class="hover:text-white">Speakers</a></li>
+                  <li><a href="#schedule" class="hover:text-white">Schedule</a></li>
+                  <li><a href="#venue" class="hover:text-white">Venue</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-white mb-5">Contact Us</h3>
+                <ul class="space-y-3 text-white/70">
+                  <li><a href="mailto:tedxBMU2025@gmail.com" class="hover:text-white">tedx@gmail.com</a></li>
+                  <li><a href="tel:+8801913783213" class="hover:text-white">+8801913783213</a></li>
+                  <li><a href="#venue" class="hover:text-white">Bangladesh Maritime University</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-white mb-5">Resources</h3>
+                <ul class="space-y-3 text-white/70">
+                  <li><a href="https://www.ted.com/" target="_blank" class="hover:text-white">TED</a></li>
+                  <li><a href="https://www.ted.com/tedx/events/61356" target="_blank" class="hover:text-white">TEDx Program</a></li>
+                  <li><a href="https://www.BMU.ac.bd/" target="_blank" class="hover:text-white">Bangladesh Maritime University</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-8 border-t border-white/10 text-center">
+            <p class="text-white/60 text-sm">© 2025 TEDxBMU. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
