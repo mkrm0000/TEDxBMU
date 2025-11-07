@@ -41,7 +41,7 @@
       <!-- Navbar -->
       <nav class="fixed top-0 left-0 right-0 z-40 bg-black/75 backdrop-blur-md border-b border-white/5 h-16 flex items-center">
         <div class="container mx-auto px-4 flex items-center justify-between">
-          <a href="#home" class="flex items-center gap-3">
+          <a href="#home" class="logo-link flex items-center gap-3">
             <span class="bg-red-600 rounded px-2 py-1 text-sm font-bold">TEDx</span>
             <span class="font-semibold text-base">BMU</span>
           </a>
@@ -84,8 +84,8 @@
       </aside>
 
       <!-- HERO / Home -->
-      <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background: linear-gradient(#000,#111);">
-        <div class="absolute inset-0 bg-black/40"></div>
+      <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
         <div class="container mx-auto px-4 relative z-10 text-center">
           <h1 class="text-red-600 text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 tracking-tight">TEDx<span class="text-white">BMU</span> 2025</h1>
           <p class="text-white/80 text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Ideas worth spreading at Bangladesh Maritime University</p>
@@ -135,7 +135,7 @@
             </div>
 
             <div class="p-6 rounded-xl border border-white/10 bg-gray-900/30">
-              <svg class="w-10 h-10 text-red-600 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02"/></svg>
+              <svg class="w-10 h-10 text-red-600 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
               <h4 class="text-white font-bold mb-2">Networking Opportunities</h4>
               <p class="text-white/70">Connect with like-minded individuals and forge valuable professional relationships.</p>
             </div>
@@ -150,51 +150,151 @@
       </section>
 
       <!-- SPEAKERS (kept similar to your original) -->
-      <section id="speakers" class="py-20 bg-zinc-900">
-        <div class="container mx-auto px-4">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Featured Speakers</h2>
-            <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
-            <p class="text-white/80 max-w-3xl mx-auto">Meet our distinguished speakers who will share their groundbreaking ideas and inspiring stories at TEDxBMU.</p>
-          </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            <!-- Repeat speaker cards (placeholder) -->
-            <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700">
-              <div class="w-full aspect-[4/5] bg-gray-800"></div>
-              <div class="p-6">
-                <h3 class="text-white font-bold">Prof. Dr. Saleh Hasan Naqib</h3>
-                <p class="text-gray-300 text-sm mt-2">Vice-Chancellor of the University of Rajshahi, renowned physicist.</p>
-              </div>
-            </div>
+		<section id="speakers" class="py-20 bg-black/40">
+		  <div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+			  <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Featured Speakers</h2>
+			  <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+			  <p class="text-white/80 max-w-3xl mx-auto">
+				Meet our distinguished speakers who will share their groundbreaking ideas and inspiring stories at TEDxBMU.
+			  </p>
+			</div>
 
-            <!-- add more speaker cards as needed -->
-            <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700">
-              <div class="w-full aspect-[4/5] bg-gray-800"></div>
-              <div class="p-6">
-                <h3 class="text-white font-bold">Dr. Muhammad Imadur Rahman</h3>
-                <p class="text-gray-300 text-sm mt-2">CEO, Bangladesh Satellite Company Limited.</p>
-              </div>
-            </div>
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+			  <!-- Speaker 1 -->
+			  <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700 shadow-lg hover:shadow-red-600/20 transition duration-300">
+				<div class="w-full aspect-[4/5] bg-gray-800 overflow-hidden">
+				  <img src="images/speakers/abdul_awal_maj.png" alt="A. K. M. Abdul Awal Majumder"
+					   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+				</div>
+				<div class="p-6">
+				  <h3 class="text-xl font-bold text-white mb-1">A. K. M. Abdul Awal Majumder</h3>
+				  <p class="text-red-500 text-sm font-medium mb-3">
+					Former Rector, Bangladesh Public Administration Training Centre
+				  </p>
+				  <p class="text-gray-300 text-sm leading-relaxed overflow-hidden max-h-24 transition-all duration-500"
+					 data-full-text="A.K.M. Abdul Awal Mazumder is a highly respected retired secretary of the Bangladesh Civil Service (Administration Cadre). An alumnus of the University of Dhaka and a Hubert H. Humphrey Fellow, he served in pivotal roles including Secretary of the Ministry of Primary and Mass Education and the Ministry of Science and ICT. He also held the post of Rector of BPATC and earlier served as Deputy Commissioner of Faridpur District. Post-retirement, Mazumder is an active writer and commentator on governance, notably authoring Bangladesh Civil Servicer Itihas.">
+					A.K.M. Abdul Awal Mazumder is a highly respected retired secretary of the Bangladesh Civil Service...
+				  </p>
+				</div>
+			  </div>
 
-            <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700">
-              <div class="w-full aspect-[4/5] bg-gray-800"></div>
-              <div class="p-6">
-                <h3 class="text-white font-bold">Zubuyer Kaolin</h3>
-                <p class="text-gray-300 text-sm mt-2">Astrophotographer & filmmaker.</p>
-              </div>
-            </div>
+			  <!-- Speaker 2 -->
+			  <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700 shadow-lg hover:shadow-red-600/20 transition duration-300">
+				<div class="w-full aspect-[4/5] bg-gray-800 overflow-hidden">
+				  <img src="images/speakers/tonia_capuano.png" alt="Dr. Tonia Astrid Capuano"
+					   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+				</div>
+				<div class="p-6">
+				  <h3 class="text-xl font-bold text-white mb-1">Dr. Tonia Astrid Capuano</h3>
+				  <p class="text-red-500 text-sm font-medium mb-3">International Technical Expert in Oceanography, Expertise France</p>
+				  <p class="text-gray-300 text-sm leading-relaxed overflow-hidden max-h-24 transition-all duration-500"
+					 data-full-text="Dr. Tonia Astrid Capuano is an internationally recognized Oceanography Expert who works as an International Technical Expert for Expertise France. Her research includes modeling complex ocean systems, studying marine microplastics, and advancing sustainable maritime development. She collaborates with institutions like the University of Dhaka’s ICOG to train researchers and strengthen ocean governance worldwide.">
+					Dr. Tonia Astrid Capuano is an internationally recognized Oceanography Expert working for Expertise France...
+				  </p>
+				</div>
+			  </div>
 
-            <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700">
-              <div class="w-full aspect-[4/5] bg-gray-800"></div>
-              <div class="p-6">
-                <h3 class="text-white font-bold">Muhammad Sajal</h3>
-                <p class="text-gray-300 text-sm mt-2">Bestselling author & nutritionist.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+			  <!-- Speaker 3 -->
+			  <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700 shadow-lg hover:shadow-red-600/20 transition duration-300">
+				<div class="w-full aspect-[4/5] bg-gray-800 overflow-hidden">
+				  <img src="images/speakers/hridoy.png" alt="Emdadul Haque Hridoy"
+					   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+				</div>
+				<div class="p-6">
+				  <h3 class="text-xl font-bold text-white mb-1">Emdadul Haque Hridoy</h3>
+				  <p class="text-red-500 text-sm font-medium mb-3">Creative, Strategic & Digital Communications Expert</p>
+				  <p class="text-gray-300 text-sm leading-relaxed overflow-hidden max-h-24 transition-all duration-500"
+					 data-full-text="Emdadul Haque Hridoy is a popular Bangladeshi stand-up comedian and performer. He rose to fame through Mirakkel Akkel Challenger and has since become a leading voice in Bangladeshi comedy, appearing in numerous shows. Beyond entertainment, he inspires audiences as a motivational speaker and content creator.">
+					Emdadul Haque Hridoy is a popular Bangladeshi stand-up comedian and performer...
+				  </p>
+				</div>
+			  </div>
+
+			  <!-- Speaker 4 -->
+			  <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700 shadow-lg hover:shadow-red-600/20 transition duration-300">
+				<div class="w-full aspect-[4/5] bg-gray-800 overflow-hidden">
+				  <img src="images/speakers/zahedi.png" alt="Hossain Mohammad Zahedi"
+					   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+				</div>
+				<div class="p-6">
+				  <h3 class="text-xl font-bold text-white mb-1">Hossain Mohammad Zahedi</h3>
+				  <p class="text-red-500 text-sm font-medium mb-3">Logistics Professional</p>
+				  <p class="text-gray-300 text-sm leading-relaxed overflow-hidden max-h-24 transition-all duration-500"
+					 data-full-text="Hossain Mohammad Zahedi is the founder and Managing Director of Freight Management Ltd. (FML). Since 1996, he has built FML into one of Bangladesh’s leading logistics providers, specializing in air, ocean, and road freight services with a strong emphasis on reliability and supply chain innovation.">
+					Hossain Mohammad Zahedi is the founder and Managing Director of Freight Management Ltd. (FML)...
+				  </p>
+				</div>
+			  </div>
+
+			  <!-- Speaker 5 -->
+			  <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700 shadow-lg hover:shadow-red-600/20 transition duration-300">
+				<div class="w-full aspect-[4/5] bg-gray-800 overflow-hidden">
+				  <img src="images/speakers/morshed_mishu.png" alt="Morshed Mishu"
+					   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+				</div>
+				<div class="p-6">
+				  <h3 class="text-xl font-bold text-white mb-1">Morshed Mishu</h3>
+				  <p class="text-red-500 text-sm font-medium mb-3">Social Activist & Cartoonist</p>
+				  <p class="text-gray-300 text-sm leading-relaxed overflow-hidden max-h-24 transition-all duration-500"
+					 data-full-text="Morshed Mishu is a Bangladeshi cartoonist, illustrator, and editor, known for his socially conscious satire. Assistant Editor of Unmad Magazine, he was named to the Forbes 30 Under 30 Asia list in 2019. His art has been showcased globally in London, Berlin, and more, reflecting humor and humanity through visual storytelling.">
+					Morshed Mishu is a Bangladeshi cartoonist, illustrator, and editor, best known for his socially conscious art...
+				  </p>
+				</div>
+			  </div>
+
+			  <!-- Speaker 6 -->
+			  <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700 shadow-lg hover:shadow-red-600/20 transition duration-300">
+				<div class="w-full aspect-[4/5] bg-gray-800 overflow-hidden">
+				  <img src="images/speakers/nayem_saikat.png" alt="Nayem Hossain Saikat"
+					   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+				</div>
+				<div class="p-6">
+				  <h3 class="text-xl font-bold text-white mb-1">Nayem Hossain Saikat</h3>
+				  <p class="text-red-500 text-sm font-medium mb-3">Co-Founder & CEO, Dubotech Digital Limited</p>
+				  <p class="text-gray-300 text-sm leading-relaxed overflow-hidden max-h-24 transition-all duration-500"
+					 data-full-text="Nayem Hossain Saikat is a Bangladeshi innovator and founder of Dubotech Digital, a deep-tech company developing autonomous underwater robots. His work in marine robotics, environmental monitoring, and open-source ventilator technology has earned national recognition and investment through Shark Tank Bangladesh.">
+					Nayem Hossain Saikat is the founder of Dubotech Digital, a deep-tech robotics company focusing on marine technology...
+				  </p>
+				</div>
+			  </div>
+
+			  <!-- Speaker 7 -->
+			  <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700 shadow-lg hover:shadow-red-600/20 transition duration-300">
+				<div class="w-full aspect-[4/5] bg-gray-800 overflow-hidden">
+				  <img src="images/speakers/shurovy.png" alt="Shurovy Yeasmin"
+					   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+				</div>
+				<div class="p-6">
+				  <h3 class="text-xl font-bold text-white mb-1">Shurovy Yeasmin</h3>
+				  <p class="text-red-500 text-sm font-medium mb-3">Travel Content Creator & Social Influencer</p>
+				  <p class="text-gray-300 text-sm leading-relaxed overflow-hidden max-h-24 transition-all duration-500"
+					 data-full-text="Shurovy Yeasmin is a Bangladeshi digital storyteller and travel vlogger who shares vibrant explorations of culture and lifestyle through her social platforms. Her engaging storytelling has built a community passionate about travel, creativity, and discovery.">
+					Shurovy Yeasmin is a Bangladeshi content creator and vlogger known for her travel and culture stories...
+				  </p>
+				</div>
+			  </div>
+
+			  <!-- Speaker 8 -->
+			  <div class="group bg-zinc-800 rounded-xl overflow-hidden border border-zinc-700 shadow-lg hover:shadow-red-600/20 transition duration-300">
+				<div class="w-full aspect-[4/5] bg-gray-800 overflow-hidden">
+				  <img src="images/speakers/tasnia_atique.png" alt="Tasnia Atique"
+					   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+				</div>
+				<div class="p-6">
+				  <h3 class="text-xl font-bold text-white mb-1">Tasnia Atique</h3>
+				  <p class="text-red-500 text-sm font-medium mb-3">Founder, Women's Shuttle</p>
+				  <p class="text-gray-300 text-sm leading-relaxed overflow-hidden max-h-24 transition-all duration-500"
+					 data-full-text="Tasnia Atique is a Bangladeshi entrepreneur and activist, founder of Women's Shuttle — a safe transport service for women. Former owner of Chillers café and Director at Ahmed Food Products, she leads 'Women's Era,' empowering female entrepreneurs nationwide. Her resilience and creativity have made her a prominent motivational speaker.">
+					Tasnia Atique is a Bangladeshi entrepreneur and activist, founder of Women's Shuttle and Women's Era...
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+
 
       <!-- HIGHLIGHTS -->
       <section id="highlights" class="py-20 bg-black">
@@ -214,27 +314,67 @@
       </section>
 
       <!-- PARTNERS (kept similar) -->
-      <section id="partners" class="py-20 bg-black">
-        <div class="container mx-auto px-4">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Trusted Partners</h2>
-            <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
-            <p class="text-white/80 max-w-3xl mx-auto">We're grateful to these amazing organizations for making TEDxBMU possible.</p>
-          </div>
+	<section id="partners" class="py-20 bg-black relative overflow-hidden">
+	  <div class="container mx-auto px-4 relative z-10">
+		<div class="text-center mb-16" style="opacity: 1;">
+		  <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Trusted Partners</h2>
+		  <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+		  <p class="text-white/80 max-w-3xl mx-auto">We're grateful to these amazing organizations for making TEDxCUET possible and helping us spread ideas worth sharing.</p>
+		</div>
+		<div class="mb-16" style="opacity: 1;">
+		  <div class="text-center mb-8">
+			<h3 class="text-2xl font-medium text-white">Gold Partners</h3>
+			<div class="w-16 h-0.5 bg-red-600 mx-auto mt-2"></div>
+		  </div>
+		  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+			<a href="https://www.ispahanitea.com/" target="_blank" rel="noopener noreferrer" class="bg-gray-800 border border-white/10 hover:border-red-600/30 rounded-lg p-6 w-full flex flex-col items-center justify-center transition-all duration-300 group h-40" aria-label="Visit Ispahani Mirzapore Tea website flex justify-center items-center" style="opacity: 1;">
+			  <img alt="Ispahani Mirzapore Tea" loading="lazy" width="180" height="90" decoding="async" data-nimg="1" class="max-w-full max-h-16 h-full object-contain group-hover:scale-110 transition-all duration-300" srcset="/_next/image?url=%2Fpartners%2F1.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fpartners%2F1.png&amp;w=384&amp;q=75 2x" src="/_next/image?url=%2Fpartners%2F1.png&amp;w=384&amp;q=75" style="">
+			</a>
+			<a href="https://aeroness.com/" target="_blank" rel="noopener noreferrer" class="bg-gray-800 border border-white/10 hover:border-red-600/30 rounded-lg p-6 w-full flex flex-col items-center justify-center transition-all duration-300 group h-40" aria-label="Visit Beximco website flex justify-center items-center" style="opacity: 1;">
+			  <img alt="Beximco" loading="lazy" width="180" height="90" decoding="async" data-nimg="1" class="max-w-full max-h-16 h-full object-contain group-hover:scale-110 transition-all duration-300" srcset="/_next/image?url=%2Fpartners%2F9.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fpartners%2F9.png&amp;w=384&amp;q=75 2x" src="/_next/image?url=%2Fpartners%2F9.png&amp;w=384&amp;q=75" style="">
+			</a>
+		  </div>
+		</div>
+		<div class="mb-16" style="opacity: 1;">
+		  <div class="text-center mb-8">
+			<h3 class="text-2xl font-medium text-white">Silver Partners</h3>
+			<div class="w-16 h-0.5 bg-red-600 mx-auto mt-2"></div>
+		  </div>
+		  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+			<a href="https://www.diamondcementbd.com/" target="_blank" rel="noopener noreferrer" class="bg-gray-800 border border-white/10 hover:border-red-600/30 rounded-lg p-6 w-full flex flex-col items-center justify-center transition-all duration-300 group h-40" aria-label="Visit Diamond Cement website flex justify-center items-center" style="opacity: 1;">
+			  <img alt="Diamond Cement" loading="lazy" width="180" height="90" decoding="async" data-nimg="1" class="max-w-full max-h-16 h-full object-contain group-hover:scale-110 transition-all duration-300" srcset="/_next/image?url=%2Fpartners%2F2.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fpartners%2F2.png&amp;w=384&amp;q=75 2x" src="/_next/image?url=%2Fpartners%2F2.png&amp;w=384&amp;q=75" style="">
+			</a>
+			<a href="https://bsrm.com/" target="_blank" rel="noopener noreferrer" class="bg-gray-800 border border-white/10 hover:border-red-600/30 rounded-lg p-6 w-full flex flex-col items-center justify-center transition-all duration-300 group h-40" aria-label="Visit BSRM website flex justify-center items-center" style="opacity: 1;">
+			  <img alt="BSRM" loading="lazy" width="180" height="90" decoding="async" data-nimg="1" class="max-w-full max-h-16 h-full object-contain group-hover:scale-110 transition-all duration-300" srcset="/_next/image?url=%2Fpartners%2F8.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fpartners%2F8.png&amp;w=384&amp;q=75 2x" src="/_next/image?url=%2Fpartners%2F8.png&amp;w=384&amp;q=75" style="">
+			</a>
+		  </div>
+		</div>
+		<div class="mb-16" style="opacity: 1;">
+		  <div class="text-center mb-8">
+			<h3 class="text-2xl font-medium text-white">Media Partners</h3>
+			<div class="w-16 h-0.5 bg-red-600 mx-auto mt-2"></div>
+		  </div>
+		  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+			<a href="https://www.somoynews.tv/" target="_blank" rel="noopener noreferrer" class="bg-gray-800 border border-white/10 hover:border-red-600/30 rounded-lg p-6 w-full flex flex-col items-center justify-center transition-all duration-300 group h-40" aria-label="Visit Shomoi TV website flex justify-center items-center" style="opacity: 1;">
+			  <img alt="Shomoi TV" loading="lazy" width="180" height="90" decoding="async" data-nimg="1" class="max-w-full max-h-16 h-full object-contain group-hover:scale-110 transition-all duration-300" srcset="/_next/image?url=%2Fpartners%2F3.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fpartners%2F3.png&amp;w=384&amp;q=75 2x" src="/_next/image?url=%2Fpartners%2F3.png&amp;w=384&amp;q=75" style="">
+			</a>
+			<a href="https://www.channel24bd.tv/" target="_blank" rel="noopener noreferrer" class="bg-gray-800 border border-white/10 hover:border-red-600/30 rounded-lg p-6 w-full flex flex-col items-center justify-center transition-all duration-300 group h-40" aria-label="Visit Channel 24 website flex justify-center items-center" style="opacity: 1;">
+			  <img alt="Channel 24" loading="lazy" width="180" height="90" decoding="async" data-nimg="1" class="max-w-full max-h-16 h-full object-contain group-hover:scale-110 transition-all duration-300" srcset="/_next/image?url=%2Fpartners%2F4.webp&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fpartners%2F4.webp&amp;w=384&amp;q=75 2x" src="/_next/image?url=%2Fpartners%2F4.webp&amp;w=384&amp;q=75" style="">
+			</a>
+			<a href="https://ekattor.tv/" target="_blank" rel="noopener noreferrer" class="bg-gray-800 border border-white/10 hover:border-red-600/30 rounded-lg p-6 w-full flex flex-col items-center justify-center transition-all duration-300 group h-40" aria-label="Visit Ekattor TV website flex justify-center items-center" style="opacity: 1;">
+			  <img alt="Ekattor TV" loading="lazy" width="180" height="90" decoding="async" data-nimg="1" class="max-w-full max-h-16 h-full object-contain group-hover:scale-110 transition-all duration-300" srcset="/_next/image?url=%2Fpartners%2F5.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fpartners%2F5.png&amp;w=384&amp;q=75 2x" src="/_next/image?url=%2Fpartners%2F5.png&amp;w=384&amp;q=75" style="">
+			</a>
+			<a href="https://www.facebook.com/share/19cYieb3CY/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="bg-gray-800 border border-white/10 hover:border-red-600/30 rounded-lg p-6 w-full flex flex-col items-center justify-center transition-all duration-300 group h-40" aria-label="Visit Infogram website flex justify-center items-center" style="opacity: 1;">
+			  <img alt="Infogram" loading="lazy" width="180" height="90" decoding="async" data-nimg="1" class="max-w-full max-h-16 h-full object-contain group-hover:scale-110 transition-all duration-300" src="/partners/6.svg" style="">
+			</a>
+			<a href="https://thedailycampus.com/" target="_blank" rel="noopener noreferrer" class="bg-gray-800 border border-white/10 hover:border-red-600/30 rounded-lg p-6 w-full flex flex-col items-center justify-center transition-all duration-300 group h-40" aria-label="Visit The Daily Campus website flex justify-center items-center" style="opacity: 1;">
+			  <img alt="The Daily Campus" loading="lazy" width="180" height="90" decoding="async" data-nimg="1" class="max-w-full max-h-16 h-full object-contain group-hover:scale-110 transition-all duration-300" src="/partners/7.svg" style="">
+			</a>
+		  </div>
+		</div>
+	  </div>
+	</section>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="#" class="bg-gray-800 border border-white/10 rounded-lg p-6 flex items-center justify-center h-40">
-              <img src="images/partner1.png" alt="Partner 1" class="max-h-16 object-contain" />
-            </a>
-            <a href="#" class="bg-gray-800 border border-white/10 rounded-lg p-6 flex items-center justify-center h-40">
-              <img src="images/partner2.png" alt="Partner 2" class="max-h-16 object-contain" />
-            </a>
-            <a href="#" class="bg-gray-800 border border-white/10 rounded-lg p-6 flex items-center justify-center h-40">
-              <img src="images/partner3.png" alt="Partner 3" class="max-h-16 object-contain" />
-            </a>
-          </div>
-        </div>
-      </section>
 
       <!-- VENUE (added to match your original) -->
       <section id="venue" class="py-20 bg-black">
@@ -263,7 +403,7 @@
                     </div>
                     <div>
                       <h4 class="font-medium text-white mb-1">Location</h4>
-                      <p class="text-white/70">Chittagong University of Engineering &amp; Technology,<br />Chittagong-4349, Bangladesh</p>
+                      <p class="text-white/70">Bangladesh Maritime University</p>
                     </div>
                   </div>
 
@@ -285,7 +425,7 @@
                     </div>
                     <div>
                       <h4 class="font-medium text-white mb-1">Contact</h4>
-                      <p class="text-white/70">+8801323465453<br />tedxBMU2025@gmail.com</p>
+                      <p class="text-white/70">+8801913783213<br />tedxBMU2025@gmail.com</p>
                     </div>
                   </div>
 
@@ -312,13 +452,14 @@
                   <!-- facebook -->
                   <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                 </a>
-                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 border border-zinc-700 hover:bg-red-600 transition">
-                  <!-- twitter -->
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2"/></svg>
-                </a>
+                
                 <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 border border-zinc-700 hover:bg-red-600 transition">
                   <!-- instagram -->
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="5"/></svg>
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+				  <rect x="2" y="2" width="20" height="20" rx="5"/>
+				  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+				  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+				  </svg>
                 </a>
                 <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 border border-zinc-700 hover:bg-red-600 transition">
                   <!-- linkedin -->
@@ -326,7 +467,10 @@
                 </a>
                 <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-zinc-800 border border-zinc-700 hover:bg-red-600 transition">
                   <!-- youtube -->
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2.5 17a24.12 24.12 0 0 1 0-10"/></svg>
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+				  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+				  <path d="m10 15 5-3-5-3z"/>
+				  </svg>
                 </a>
               </div>
             </div>

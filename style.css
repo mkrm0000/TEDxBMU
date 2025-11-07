@@ -17,6 +17,11 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* === Loader Progress Bar Animation (initial state only) === */
 @keyframes loadProgress {
   from {
@@ -32,7 +37,16 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.6s ease, visibility 0.6s ease;
+  
+    /* === Background Image === */
+  background-image: url("images/Background.png"); /* <-- update path */
+  background-size: cover;          /* fills screen without stretching */
+  background-position: center;     /* centers the image */
+  background-repeat: no-repeat;    /* no tiling */
+  background-attachment: fixed;    /* subtle parallax effect */
+  min-height: 100vh;               /* ensures full screen height */
 }
+
 
 /* === Reveal Main Content After Load === */
 body.loaded #main-content {
